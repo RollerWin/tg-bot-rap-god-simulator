@@ -1,0 +1,97 @@
+class DefaultPlayerState:
+    BLACK_SKIN_COLOR_INDEX = 0
+    WHITE_SKIN_COLOR_INDEX = 1
+
+    BLACK_SKIN_CRIMINAL_RATE = 25
+    WHITE_SKIN_CRIMINAL_RATE = 0
+
+    BLACK_SKIN_BALANCE = 150000
+    WHITE_SKIN_BALANCE = 300
+
+    BLACK_SKIN_FAME = 25
+    WHITE_SKIN_FAME = 0
+
+    BLACK_SKIN_RESPECT = 15
+    WHITE_SKIN_RESPECT = 0
+
+
+class CasinoRules:
+    DICE_GAME_ID = 1
+    DICE_GAME_COST = 50
+    DICE_REWARD = 100
+
+    ROULETTE_GAME_ID = 2
+    ROULETTE_GAME_COST = 100
+    ROULETTE_REWARD = 300
+
+    SLOTS_GAME_ID = 3
+    SLOTS_GAME_COST = 30
+    SLOTS_MIN_REWARD = 1000
+    SLOTS_MID_REWARD = 2000
+    SLOTS_MAX_REWARD = 30000
+
+
+class WorkConfiguration:
+    MCDONALDS_WORK_TIME = 30
+    MCDONALDS_REWARD_MONEY = 50
+    MCDONALDS_CRIMINAL_RATE_DOWNGRADE = -3
+
+    MIXING_TRACK_TIME = 60
+    MIXING_TRACK_MAX_REWARD = 150
+    DEFAULT_PROBABILITY_TO_SUCCESS = 0.5
+    MIXING_TRACK_RESPECT_INCREASE = 5
+    MIXING_TRACK_FAME_INCREASE = 15
+
+    ROBBERY_REWARD_MONEY = 150
+    ROBBERY_CRIMINAL_RATE_INCREASE = 10
+    ROBBERY_PROBABILITY_TO_SUCCESS = 0.15
+    ROBBERY_MONEY_PENALTY = 500
+    ROBBERY_TIME_PENALTY = 500
+
+
+class DefaultGameConfiguration:
+    NUMBER_OF_OG_PLAYERS = 50
+
+    REFFERAL_BONUS_BALANCE = 500
+    REFFERAL_BONUS_FAME = 25
+    REFFERAL_BONUS_RESPECT = 15
+
+    BOT_NICKNAME = "ytvideotestbot"
+
+
+class DefaultItems:
+    SPEAKER = "Колонки"
+    SPEAKER_PROBABILITY_INCREASE = 0.05
+    SPEAKER_DESCRIPTION = (f"Качественные колонки\nПовышают вероятность успешного сведения на "
+                           f"{SPEAKER_PROBABILITY_INCREASE * 100}%")
+    SPEAKER_PRICE = 200
+    SPEAKER_IS_LEGAL = True
+
+    PC = "Компьютер"
+    PC_PROBABILITY_INCREASE = 0.1
+    PC_DESCRIPTION = (f"Мама, клянусь, это для учёбы!\nПовышает вероятность успешного сведения на "
+                      f"{PC_PROBABILITY_INCREASE * 100}%")
+    PC_PRICE = 1000
+    PC_IS_LEGAL = True
+
+    PISTOL = "Пистолет"
+    PISTOL_DESCRIPTION = "Убийственный. Подходит как для самоообороны, так и для ограблений"
+    PISTOL_PRICE = 500
+    PISTOL_CRIME_RATE_INCREASE = 0.1
+    PISTOL_PROBABILITY_INCREASE = 0.1
+    PISTOL_IS_LEGAL = False
+
+    LIL_KNIFE = "Ножик"
+    LIL_KNIFE_DESCRIPTION = "Дрезкий как пуля резкий, маленький и ловкий, но очень острый"
+    LIL_KNIFE_PRICE = 200
+    LIL_KNIFE_CRIME_RATE_INCREASE = 0.03
+    LIL_KNIFE_PROBABILITY_INCREASE = 0.03
+    LIL_KNIFE_IS_LEGAL = False
+
+
+class MusicConfiguration:
+    MIN_MONEY_TO_CREATE_SINGLE = 5000
+    AVERAGE_GROWTH_LISTENERS_PER_HOUR = 500
+    MONEY_PER_LISTENER = 0.01
+
+    MONEY_TO_CREATE_LABEL = 250000
